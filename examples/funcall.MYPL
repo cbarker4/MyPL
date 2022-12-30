@@ -1,0 +1,16 @@
+fun int fib(int num){
+    #print(num)
+    #print("  " )
+    if num <= 1{
+        return num
+    }
+    return fib(num-1) + fib(num-2)
+}
+fun int addd(int x1,int x2){
+    return x1+x2
+}
+
+fun void main (){
+   var i = addd(fib(36),fib(36))   # dont use 2
+   print(i)
+}
